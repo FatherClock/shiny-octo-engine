@@ -1,4 +1,5 @@
 from tkinter import *
+from PIL import ImageTk,Image
 from tkinter import messagebox
 
 def submit():
@@ -55,7 +56,7 @@ def login():
     entry_Password.grid(row = 1, column = 1, padx = 5, pady = 5)
 
     #for pass input show *    
-    password = Entry(frame_entry, width = 15, bg = "white", show = '.')
+    password = Entry(frame_entry, width = 15, bg = "white", show = '*')
     password.grid(row = 1, column = 1, padx = 5, pady = 5)
 
     #place submit button
@@ -74,6 +75,7 @@ def main():
     global root
     global button
     global frame_buttons
+    global window
     #window
     window = Tk()
     window.geometry("500x500")
@@ -95,6 +97,11 @@ def main():
     #place the form heading 
     Label(frame_heading,text="BTC Is Yummy", font=('Calibri', 16)).grid(row = 0, column = 00, padx = 0, pady = 5)  
 
+    
+    canvas = Canvas(root, width = 50, height = 50)  
+    canvas.pack()  
+    img = ImageTk.PhotoImage(Image.open("logo2.png"))  
+    canvas.create_image(20, 20, anchor=NW, image=img)
 
 
 root.mainloop()
