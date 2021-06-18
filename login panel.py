@@ -4,7 +4,8 @@ from PIL import ImageTk,Image
 
 
 
-
+def quit():
+    window.destroy()
 
 def shirt():
     shirt = open("items.txt", "r")
