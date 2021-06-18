@@ -4,8 +4,7 @@ from PIL import ImageTk,Image
 
 
 
-def quit():
-    window.destroy()
+
 
 def shirt():
     shirt = open("items.txt", "r")
@@ -57,6 +56,10 @@ def submit():
 def signout():
     window.destroy()
     Login()
+
+
+def quit():
+    window.destroy()
     
 #display a message box with hint for password
 def hint():
@@ -151,7 +154,9 @@ def main():
     shoe_button = Button(window, text = "Buy some Shoes", width = 12, command = shoe )
     shoe_button.place(x = 40, y = 350)
 
-    #images
+    #where th3 image code would have gone :(
+
+
 
 
 
