@@ -100,6 +100,9 @@ def Login():
     #place hint button
     hint_button = Button(frame_buttons, text = "Password hint", width = 15, command = hint )
     hint_button.grid(row = 0, column = 1, padx = 5, pady = 5 )
+
+    quit_button = Button(frame_buttons, text = "Quit Login", width = 15, command = quit )
+    quit_button.grid(row = 1, column = 1, padx = 5, pady = 5 )
 Login()
 
 def signout():
