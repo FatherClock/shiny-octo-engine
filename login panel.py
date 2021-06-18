@@ -48,7 +48,7 @@ def submit():
 
     else:
         messageAlert.config(text = "Password accepted")
-        messagebox.showinfo(title = "Password Accepted", message = "Click OK to continue")
+        messagebox.showinfo(title = "Password Accepted", message = "Good Job, You Remembered Your Pass.")
         root.destroy()
         main()
 
@@ -59,7 +59,7 @@ def signout():
     
 #display a message box with hint for password
 def hint():
-    messagebox.showinfo(title = "Password Hint", message = "Hint: Try Password 1234")
+    messagebox.showinfo(title = "Password Hint", message = "Hint: Try Something Dead Simple")
 
 def Login():
     #global variables called throughout script
@@ -144,7 +144,7 @@ def main():
     tie_button = Button(window, text = "Buy a Tie", width = 12, command = tie )
     tie_button.place(x = 325, y = 350)
 
-    shoe_button = Button(window, text = "Buy some shoes", width = 12, command = shoe )
+    shoe_button = Button(window, text = "Buy some Shoes", width = 12, command = shoe )
     shoe_button.place(x = 40, y = 350)
 
     #images
