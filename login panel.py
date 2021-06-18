@@ -97,7 +97,7 @@ def main():
     #place the form heading 
     Label(frame_heading,text="BTC Is Yummy", font=('Calibri', 16)).grid(row = 0, column = 00, padx = 0, pady = 5)  
 
-    
+    #where the image code would have gone
     canvas = Canvas(root, width = 50, height = 50)  
     canvas.pack()  
     img = ImageTk.PhotoImage(Image.open("logo2.png"))  
