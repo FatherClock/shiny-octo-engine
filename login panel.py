@@ -58,8 +58,7 @@ def signout():
     Login()
 
 
-def quit():
-    window.destroy()
+
     
 #display a message box with hint for password
 def hint():
@@ -109,10 +108,11 @@ def Login():
 Login()
 
 def signout():
-    Login()
     window.destroy()
+    Login()
 
-
+def quit():
+    window.destroy()
 
 def main():
     global window
