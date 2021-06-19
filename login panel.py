@@ -43,7 +43,7 @@ def submit():
     if Password != "1234":
         messageAlert.config(text = "Password incorrect")
         entry_username.delete(0, "END")
-        entry_Password.delete(1, "END")
+        entry_Password.delete(0, "END")
         entry_username.focus_set()
 
     else:
@@ -58,8 +58,6 @@ def signout():
     Login()
 
 
-
-    
 #display a message box with hint for password
 def hint():
     messagebox.showinfo(title = "Password Hint", message = "Hint: Try Something Dead Simple")
