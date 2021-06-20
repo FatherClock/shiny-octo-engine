@@ -68,7 +68,7 @@ def Login():
     global entry_username
     global entry_Password
     global root
-    #create Online Shop window
+    #create windows
     root = Tk()
     root.geometry("250x180")
     root.title("Login Screen")
